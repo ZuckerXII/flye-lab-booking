@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Flye Lab Booking</title>
+  <style>
+    body {
+      font-family: sans-serif;
+      background-color: #f0f4f8;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+    }
+    .form-container {
+      background-color: white;
+      padding: 2rem;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+      width: 100%;
+      max-width: 500px;
+    }
+    .form-container h2 {
+      margin-bottom: 1rem;
+      text-align: center;
+    }
+    .form-container input,
+    .form-container textarea,
+    .form-container button {
+      width: 100%;
+      padding: 0.75rem;
+      margin-bottom: 1rem;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      font-size: 1rem;
+    }
+    .form-container button {
+      background-color: #4f46e5;
+      color: white;
+      border: none;
+      cursor: pointer;
+      transition: background-color 0.3s;
+    }
+    .form-container button:hover {
+      background-color: #4338ca;
+    }
+  </style>
+</head>
+<body>
+  <div class="form-container">
+    <h2>Flye Lab - จองห้องปฏิบัติการ</h2>
+    <form id="bookingForm">
+      <input type="text" placeholder="ชื่อหัวหน้ากลุ่ม" required />
+      <input type="text" placeholder="รหัสนักศึกษา" required />
+      <textarea placeholder="รายชื่อสมาชิก (ไม่เกิน 5 คน)" rows="3" required></textarea>
+      <input type="date" required />
+      <textarea placeholder="เหตุผลในการใช้ห้องแลป" rows="3" required></textarea>
+      <button type="submit">ส่งคำขอจอง</button>
+    </form>
+  </div>
+</body>
+</html>
